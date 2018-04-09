@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 class Posts extends Component {
     componentWillMount(){
-        console.log(123);
+        fetch('https://jsonplaceholder.typicode.com/posts')
     }
     render() {
         return (

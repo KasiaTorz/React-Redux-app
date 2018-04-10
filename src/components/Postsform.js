@@ -11,15 +11,24 @@ class Postsform extends Component {
         };
 
         this.onChange= this.onChange.bind(this);
+        this.onSubmit= this.onSubmit.bind(this);
     }
     onChange(e){
         this.setState({[e.target.name]:e.target.value});
     }
+    onSubmit(e){
+     e.preventDefault();
+     const post={
+         title:this.state.title,
+         body:this.state.body,
+     }
+    }
+    
     render() {
      return(
             <div >
                 <h1> About Fashon</h1>
-                <form>
+                <form onSubmit={this.onSubmit}>
                     <div>
                         <label>Title</label><br/>
                         <input type= "text" name="title" onChange={this.onChange} value={this.state.title}/>

@@ -20,4 +20,4 @@ class Postsform extends Component {
     }
 }
 
-export default Posts;
+export default Postsform;

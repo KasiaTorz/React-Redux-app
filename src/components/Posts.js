@@ -24,6 +24,7 @@ class Posts extends Component {
         return (
             <div >
                 <h1> Newest posts from fashon world</h1>
+                {postsItems}
             </div>
         );
     }

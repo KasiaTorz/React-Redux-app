@@ -21,7 +21,8 @@ class Postsform extends Component {
                     </div>
                     <div>
                         <label>Body</label><br/>
-                        <"textarea name="body"/>
+                        <textarea name="body"/><br/>
+                        <button type="submit">Accept</button>
                     </div>
                 </form>
 

@@ -19,11 +19,11 @@ class Postsform extends Component {
                 <form>
                     <div>
                         <label>Title</label><br/>
-                        <input type= "text" name="title"/>
+                        <input type= "text" name="title" value={this.state.title}/>
                     </div>
                     <div>
                         <label>Body</label><br/>
-                        <textarea name="body"/><br/>
+                        <textarea name="body" value={this.state.value}/><br/>
                         <button type="submit">Accept</button>
                     </div>
                 </form>

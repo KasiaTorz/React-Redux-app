@@ -14,6 +14,16 @@ class Postsform extends Component {
      return(
             <div >
                 <h1> About Fashon</h1>
+                <form>
+                    <div>
+                        <label>Title</label><br/>
+                        <input type= "text" name="title"/>
+                    </div>
+                    <div>
+                        <label>Body</label><br/>
+                        <"textarea name="body"/>
+                    </div>
+                </form>
 
             </div>
         );

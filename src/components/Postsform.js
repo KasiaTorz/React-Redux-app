@@ -8,8 +8,9 @@ class Postsform extends Component {
             title:'',
             body:'',
 
-        }
+        };
 
+        this.onChange= this.onChange.bind(this);
     }
 
     render() {
@@ -19,11 +20,11 @@ class Postsform extends Component {
                 <form>
                     <div>
                         <label>Title</label><br/>
-                        <input type= "text" name="title" value={this.state.title}/>
+                        <input type= "text" name="title" onChange={this.onChange} value={this.state.title}/>
                     </div>
                     <div>
                         <label>Body</label><br/>
-                        <textarea name="body" value={this.state.value}/><br/>
+                        <textarea name="body" onChange={this.onChange} value={this.state.body}/><br/>
                         <button type="submit">Accept</button>
                     </div>
                 </form>
